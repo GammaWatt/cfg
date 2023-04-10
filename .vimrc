@@ -3,6 +3,8 @@ highlight Visual cterm=reverse ctermbg=NONE
 " set autochdir
 set tags=tags;
 
+set path+=.,**
+
 set nocompatible
 set noswapfile
 set nobackup
@@ -229,8 +231,6 @@ set mouse=a
 " Show the current static always.
 set laststatus=2
 
-set path+=.,**
-
 " Prevent new line when wrapping
 set textwidth=0
 
@@ -306,8 +306,6 @@ nnoremap gb :ls<CR>:b<Space>
 
 nnoremap <leader>j :tjump /
 
-" Quickly switch to buffer by its number. [bufnum]<leader>gb
-nnoremap <leader>gb :<C-U>exe ":buffer " . v:count1<CR>
 
 " Toggle relative numbering
 nnoremap yr :set<Space>relativenumber!<CR>
