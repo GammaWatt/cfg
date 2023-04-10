@@ -44,7 +44,6 @@ if has("cscope")
       cs add $CSCOPE_DB
    endif
    set csverb
-endif
 
 
    " show msg when any other cscope db added
